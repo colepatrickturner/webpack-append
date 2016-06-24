@@ -1,7 +1,7 @@
 {
-  "name": "webpack-append",
+  "name": "webpack-concat-string",
   "version": "0.1.2",
-  "description": "Simple loader to append text to files (useful for adding file headers)",
+  "description": "Simple loader to concat text to files (useful for adding file headers)",
   "keywords": [
     "webpack",
     "loader",
@@ -23,12 +23,13 @@
   },
   "homepage": "https://github.com/dumconstantin/webpack-append",
   "authors": [
+    "Cole Turner <turner.cole@gmail.com> (https://github.com/colepatrickturner)"
     "Constantin Dumitrescu <dum.constantin@gmail.com> (https://github.com/dumconstantin)"
   ],
   "license": "MIT",
   "private": false,
   "readmeFilename": "README.md",
   "bugs": {
-    "url": "https://github.com/dumconstantin/webpack-append/issues"
+    "url": "https://github.com/colepatrickturner/webpack-concat-string/issues"
   }
 }
