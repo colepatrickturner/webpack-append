@@ -22,6 +22,11 @@ module.exports = function(source, map) {
   {
     query.prepend.forEach(function(str)
     {
+      if(typeof str == 'function')
+      {
+        str = str(source);
+      }
+      
       source = str + source;
     });
   }
@@ -30,7 +35,12 @@ module.exports = function(source, map) {
   {
     query.append.forEach(function(str)
     {
-      source += str
+      if(typeof str == 'function')
+      {
+        str = str(source);
+      }
+      
+      source += str;
     });
   }
 
