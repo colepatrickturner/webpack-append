@@ -1,6 +1,7 @@
 module.exports = function(source, map) {
   this.cacheable();
   
+  var callback = this.async();
   var query = this.query;
   
   if(typeof query == 'string')
@@ -48,5 +49,5 @@ module.exports = function(source, map) {
     });
   }
 
-  this.callback(null, source, map)
+  callback(null, source, map)
 };
