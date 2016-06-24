@@ -1,6 +1,6 @@
 {
   "name": "webpack-concat-string",
-  "version": "0.2",
+  "version": "0.2.1",
   "description": "Simple loader to concat text to files (useful for adding file headers)",
   "keywords": [
     "webpack",
