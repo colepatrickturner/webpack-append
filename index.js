@@ -25,6 +25,8 @@ module.exports = function(source, map) {
       if(typeof str == 'function')
       {
         str = str(source);
+        
+        if(str === false || str === null) { return; }
       }
       
       source = str + source;
@@ -38,6 +40,8 @@ module.exports = function(source, map) {
       if(typeof str == 'function')
       {
         str = str(source);
+        
+        if(str === false || str === null) { return; }
       }
       
       source += str;
